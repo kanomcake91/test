@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>About Me</title>
+    <title>Form</title>
 
     <!-- Custom fonts for this template -->
     <link
@@ -62,8 +62,6 @@
             <span>Dashboard</span></a
           >
         </li>
-
-        <!-- Divider -->
         <hr class="sidebar-divider" />
 
         <!-- Heading -->
@@ -93,11 +91,10 @@
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="about.html">About</a>
               <!-- <div class="collapse-divider"></div> -->
-              <a class="collapse-item" href="survery.html">Self Assessment</a>
+              <a class="collapse-item" href="#">Self Assessment</a>
             </div>
           </div>
         </li>
-
         <!-- Nav Item - Tables -->
         <li class="nav-item active">
           <a class="nav-link" href="tables.html">
@@ -412,56 +409,225 @@
             </ul>
           </nav>
           <!-- End of Topbar -->
+
           <div class="container-fluid">
-
             <!-- Page Heading -->
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-              <h1 class="h3 mb-0 text-gray-800">About Me</h1>
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Survery Form</h1>
             </div>
-  
-            <div class="row">
-  
-                <div class="col-md-3"></div>
-  
-              <div class="col-md-6">
-  
-                <!-- Basic Card Example -->
-               
-                  <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Sorravit Thongsong</h6>
-                  </div>
-                  <div class="row">
-                      <div class="group col-xl-6">
-                        <div class="card-body">
-                          <img class="img-profile" width="100%"  src="img/me.jpg">
-                        </div>
-                      </div>
-                      
-                      <div class="group col-xl-6">
-                          <div class="card-body">
-                              <p><b>Student ID : </b>6130613028 <br>
-                              <b>Name : </b> Sorravit Thongsong <br>
-                              <b>Nickname : </b> Born <br>
-                              <b>Major : </b> Software Engineering <br>
-                              <b>Faculty : </b> College Of Computing  <br>
-                              <b>University : </b> Prince Of Songkla University , Phuket Campus <br>
-                              
-                          </div>     
-                      </div>
-                  </div>
-                
-  
-              </div>
-  
-              <div class="col-md-3"></div>
-  
-            </div>
-  
-          </div>
 
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="form-group row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <input
+                    type="text"
+                    class="form-control form-control-user"
+                    id=""
+                    placeholder="ชื่อจริง / First Name"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control form-control-user"
+                    id=""
+                    placeholder="นามสกุล / Last Name"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="form-group row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <input
+                    type="text"
+                    class="form-control form-control-user"
+                    id=""
+                    placeholder="เลขประจำตัวประชาชน"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control form-control-user"
+                    id=""
+                    placeholder="เบอร์โทรศัพท์"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="radio mr-3">
+                <label
+                  ><input type="radio" name="optradio0" />
+                  ผู้ถือหุ้นหรือผู้มอบฉันทะ/shareholder or proxy</label
+                >
+              </div>
+              <div class="radio">
+                <label
+                  ><input type="radio" name="optradio0" />
+                  ผู้ติดตาม/Escort</label
+                >
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-md-3"></div>
+              ในปัจจุบันคุณมีอาการดังต่อไปนี้หรือไม่ โปรดระบุ :
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-md-3"></div>
+              <div class="col-md-3">1. ไอ / เจ็บคอ (Cough Sore Throat)</div>
+              <div class="radio ml-3 mr-3">
+                <label
+                  ><input type="radio" name="optradio1" /> ใข้ / Yes
+                </label>
+              </div>
+              <div class="radio">
+                <label
+                  ><input type="radio" name="optradio1" /> ไม่ใช่ / No</label
+                >
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-md-3"></div>
+              <div class="col-md-3">2. มีน้ำมูก (Runny Nose)</div>
+              <div class="radio ml-3 mr-3">
+                <label
+                  ><input type="radio" name="optradio2" /> ใข้ / Yes
+                </label>
+              </div>
+              <div class="radio">
+                <label
+                  ><input type="radio" name="optradio2" /> ไม่ใช่ / No</label
+                >
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-md-3"></div>
+              <div class="col-md-3">
+                3. หายใจเหนื่อย หรือ หายใจลำบาก (Shortness of Breath/Diffculty
+                breathing)
+              </div>
+              <div class="radio ml-3 mr-3">
+                <label
+                  ><input type="radio" name="optradio3" /> ใข้ / Yes
+                </label>
+              </div>
+              <div class="radio">
+                <label
+                  ><input type="radio" name="optradio3" /> ไม่ใช่ / No</label
+                >
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-md-3"></div>
+              <div class="col-md-3">
+                4.
+                คุณมีอาการใดๆที่มีอยู่ซึ่งจะทำให้ระบบภูมิคุ้มกันของคุณอ่อนแอลง
+                (Do you have any existing condition which weakens your immune
+                system ?)
+              </div>
+
+              <div class="radio ml-3 mr-3">
+                <label
+                  ><input type="radio" name="optradio4" /> ใข้ / Yes
+                </label>
+              </div>
+              <div class="radio">
+                <label
+                  ><input type="radio" name="optradio4" /> ไม่ใช่ / No</label
+                >
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-3"></div>
+              ในช่วง 14 วันที่ผ่านมาคุณเดินทาง หรือ แวะผ่าน ในประเทศใดๆ หรือไม่
+              ? โปรดระบุ <br />
+              (During last 14 days, have you travelled from or transited in any
+              country )
+              <div class="col-md-3 ml-5">
+                <div class="radio mr-3">
+                  <label
+                    ><input type="radio" name="optradio5" /> ใข้ / Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label
+                    ><input type="radio" name="optradio5" /> ไม่ใช่ / No</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="radio mr-3">
+                <label
+                  ><input type="radio" name="optradio6" /> China (จีน)</label
+                >
+              </div>
+              <div class="radio mr-3">
+                <label
+                  ><input type="radio" name="optradio6" /> Macao (มาเก๊า)</label
+                >
+              </div>
+              <div class="radio mr-3">
+                <label
+                  ><input type="radio" name="optradio6" /> Hong Kong
+                  (ฮ่องกง)</label
+                >
+              </div>
+              <div class="radio mr-3">
+                <label
+                  ><input type="radio" name="optradio6" /> South Korea
+                  (เกาหลีใต้)</label
+                >
+              </div>
+              <div class="radio mr-3">
+                <label
+                  ><input type="radio" name="optradio6" /> Iran (อิหร่าน)</label
+                >
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-3"></div>
+              ในช่วง 14
+              วันที่ผ่านมาคุณสัมผัสใกล้ชิดกับคนที่มาจากพื้นที่ที่มีรายงานการระบาดต่อเนื่องของโรค
+              COVID-19 <br />
+              หรือ มีประวัติใกล้ชิด หรือ สัมผัสกับผู้ป่วนเข้าข่าย หรือ ยืนยัน
+              โรคติดเชื่อ COVID-19 หรือไม่ <br />
+              (During last 14 days, have you close contact those who came back
+              from the area affected <br />
+              by the outtbreacks of COVID-19 or history of close contact with a
+              confirmed case of COVID-19 infection?)
+              <div class="col-md-3">
+                <div class="radio mr-3">
+                  <label
+                    ><input type="radio" name="optradio5" /> ใข้ / Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label
+                    ><input type="radio" name="optradio5" /> ไม่ใช่ / No</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-5"></div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
         </div>
-        <!-- End of Main Content -->
-  
+
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
@@ -471,8 +637,9 @@
           </div>
         </footer>
         <!-- End of Footer -->
-  
       </div>
+      <!-- End of Content Wrapper -->
+    </div>
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -535,8 +702,6 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/data.js"></script>
+    <script src="js/country.js"></script>
   </body>
 </html>
-
-
