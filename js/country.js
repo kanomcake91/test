@@ -3,10 +3,7 @@ $(function () {
   console.log(urlParams.get("country"));
   var country = urlParams.get("country");
   $("#country").html(country);
-  var Total = 0;
-  var confirmed = 0;
-  var deaths = 0;
-  var recovered = 0;
+
   var url = "https://pomber.github.io/covid19/timeseries.json";
   $.getJSON(url, function (result) {
     var selectedCountry = result[country];
@@ -21,9 +18,9 @@ $(function () {
 
       $("#data").append(row);
     }
-    var confirmed = selectedCountry[total - 1].confirmed;
-    var deaths = selectedCountry[total - 1].deaths;
-    var recovered = selectedCountry[total - 1].recovered;
+    var confirmed = selectedCountry[total - 1].confirmed + " People";
+    var deaths = selectedCountry[total - 1].deaths + " People";
+    var recovered = selectedCountry[total - 1].recovered + " People";
 
     $("#confirmed").append(confirmed);
     $("#deaths").append(deaths);
