@@ -59,7 +59,7 @@
         <li class="nav-item">
           <a class="nav-link" href="index.html">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a
+            <span>Home</span></a
           >
         </li>
         <hr class="sidebar-divider" />
@@ -95,7 +95,12 @@
             </div>
           </div>
         </li>
-
+        <li class="nav-item active">
+          <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tables</span></a
+          >
+        </li>
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
 
@@ -410,213 +415,210 @@
             >
               <h1 class="h3 mb-0 text-gray-800">Survery Form</h1>
             </div>
-
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="form-group row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                  <input
-                    type="text"
-                    class="form-control form-control-user"
-                    id=""
-                    placeholder="ชื่อจริง / First Name"
-                  />
+            <form action="#">
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input
+                      type="text"
+                      class="form-control form-control-user"
+                      id=""
+                      placeholder="ชื่อจริง / First Name"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-user"
+                      id=""
+                      placeholder="นามสกุล / Last Name"
+                    />
+                  </div>
                 </div>
-                <div class="col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control form-control-user"
-                    id=""
-                    placeholder="นามสกุล / Last Name"
-                  />
+                <div class="col-md-3"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input
+                      type="text"
+                      class="form-control form-control-user"
+                      id=""
+                      placeholder="เลขประจำตัวประชาชน"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-user"
+                      id=""
+                      placeholder="เบอร์โทรศัพท์"
+                    />
+                  </div>
                 </div>
+                <div class="col-md-3"></div>
               </div>
-              <div class="col-md-3"></div>
-            </div>
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="form-group row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                  <input
-                    type="text"
-                    class="form-control form-control-user"
-                    id=""
-                    placeholder="เลขประจำตัวประชาชน"
-                  />
-                </div>
-                <div class="col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control form-control-user"
-                    id=""
-                    placeholder="เบอร์โทรศัพท์"
-                  />
-                </div>
-              </div>
-              <div class="col-md-3"></div>
-            </div>
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="radio mr-3">
-                <label
-                  ><input type="radio" name="optradio0" />
-                  ผู้ถือหุ้นหรือผู้มอบฉันทะ/shareholder or proxy</label
-                >
-              </div>
-              <div class="radio">
-                <label
-                  ><input type="radio" name="optradio0" />
-                  ผู้ติดตาม/Escort</label
-                >
-              </div>
-            </div>
-
-            <div class="row mt-4">
-              <div class="col-md-3"></div>
-              ในปัจจุบันคุณมีอาการดังต่อไปนี้หรือไม่ โปรดระบุ :
-            </div>
-
-            <div class="row mt-2">
-              <div class="col-md-3"></div>
-              <div class="col-md-3">1. ไอ / เจ็บคอ (Cough Sore Throat)</div>
-              <div class="radio ml-3 mr-3">
-                <label
-                  ><input type="radio" name="optradio1" /> ใข้ / Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label
-                  ><input type="radio" name="optradio1" /> ไม่ใช่ / No</label
-                >
-              </div>
-            </div>
-            <div class="row mt-2">
-              <div class="col-md-3"></div>
-              <div class="col-md-3">2. มีน้ำมูก (Runny Nose)</div>
-              <div class="radio ml-3 mr-3">
-                <label
-                  ><input type="radio" name="optradio2" /> ใข้ / Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label
-                  ><input type="radio" name="optradio2" /> ไม่ใช่ / No</label
-                >
-              </div>
-            </div>
-            <div class="row mt-2">
-              <div class="col-md-3"></div>
-              <div class="col-md-3">
-                3. หายใจเหนื่อย หรือ หายใจลำบาก (Shortness of Breath/Diffculty
-                breathing)
-              </div>
-              <div class="radio ml-3 mr-3">
-                <label
-                  ><input type="radio" name="optradio3" /> ใข้ / Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label
-                  ><input type="radio" name="optradio3" /> ไม่ใช่ / No</label
-                >
-              </div>
-            </div>
-            <div class="row mt-2">
-              <div class="col-md-3"></div>
-              <div class="col-md-3">
-                4.
-                คุณมีอาการใดๆที่มีอยู่ซึ่งจะทำให้ระบบภูมิคุ้มกันของคุณอ่อนแอลง
-                (Do you have any existing condition which weakens your immune
-                system ?)
-              </div>
-
-              <div class="radio ml-3 mr-3">
-                <label
-                  ><input type="radio" name="optradio4" /> ใข้ / Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label
-                  ><input type="radio" name="optradio4" /> ไม่ใช่ / No</label
-                >
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-md-3"></div>
-              ในช่วง 14 วันที่ผ่านมาคุณเดินทาง หรือ แวะผ่าน ในประเทศใดๆ หรือไม่
-              ? โปรดระบุ <br />
-              (During last 14 days, have you travelled from or transited in any
-              country )
-              <div class="col-md-3 ml-5">
+              <div class="row">
+                <div class="col-md-3"></div>
                 <div class="radio mr-3">
                   <label
-                    ><input type="radio" name="optradio5" /> ใข้ / Yes
+                    ><input type="radio" name="optradio0" />
+                    ผู้ถือหุ้นหรือผู้มอบฉันทะ/shareholder or proxy</label
+                  >
+                </div>
+                <div class="radio">
+                  <label
+                    ><input type="radio" name="optradio0" />
+                    ผู้ติดตาม/Escort</label
+                  >
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-md-3"></div>
+                ในปัจจุบันคุณมีอาการดังต่อไปนี้หรือไม่ โปรดระบุ :
+              </div>
+
+              <div class="row mt-2">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">1. ไอ / เจ็บคอ (Cough Sore Throat)</div>
+                <div class="radio ml-3 mr-3">
+                  <label
+                    ><input type="radio" name="optradio1" /> ใข้ / Yes
                   </label>
                 </div>
                 <div class="radio">
                   <label
-                    ><input type="radio" name="optradio5" /> ไม่ใช่ / No</label
+                    ><input type="radio" name="optradio1" /> ไม่ใช่ / No</label
                   >
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3"></div>
-              <label class="checkbox-inline mr-3"
-                ><input type="checkbox" value="" />China (จีน)</label
-              >
-              <label class="checkbox-inline mr-3"
-                ><input type="checkbox" value="" />Macao (มาเก๊า)</label
-              >
-              <label class="checkbox-inline mr-3"
-                ><input type="checkbox" value="" />Hong Kong (ฮ่องกง)</label
-              >
-              <label class="checkbox-inline mr-3"
-                ><input type="checkbox" value="" />Phuket (ภูเก็ต)</label
-              >
-              <label class="checkbox-inline mr-3"
-                ><input type="checkbox" value="" />America (อเมริกา)</label
-              >
-            </div>
-            <div class="row mt-4">
-              <div class="col-md-3"></div>
-              ในช่วง 14
-              วันที่ผ่านมาคุณสัมผัสใกล้ชิดกับคนที่มาจากพื้นที่ที่มีรายงานการระบาดต่อเนื่องของโรค
-              COVID-19 <br />
-              หรือ มีประวัติใกล้ชิด หรือ สัมผัสกับผู้ป่วนเข้าข่าย หรือ ยืนยัน
-              โรคติดเชื่อ COVID-19 หรือไม่ <br />
-              (During last 14 days, have you close contact those who came back
-              from the area affected <br />
-              by the outtbreacks of COVID-19 or history of close contact with a
-              confirmed case of COVID-19 infection?)
-              <div class="col-md-3">
-                <div class="radio mr-3">
+              <div class="row mt-2">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">2. มีน้ำมูก (Runny Nose)</div>
+                <div class="radio ml-3 mr-3">
                   <label
-                    ><input type="radio" name="optradio5" /> ใข้ / Yes
+                    ><input type="radio" name="optradio2" /> ใข้ / Yes
                   </label>
                 </div>
                 <div class="radio">
                   <label
-                    ><input type="radio" name="optradio5" /> ไม่ใช่ / No</label
+                    ><input type="radio" name="optradio2" /> ไม่ใช่ / No</label
                   >
                 </div>
               </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-md-5"></div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+              <div class="row mt-2">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                  3. หายใจเหนื่อย หรือ หายใจลำบาก (Shortness of Breath/Diffculty
+                  breathing)
+                </div>
+                <div class="radio ml-3 mr-3">
+                  <label
+                    ><input type="radio" name="optradio3" /> ใข้ / Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label
+                    ><input type="radio" name="optradio3" /> ไม่ใช่ / No</label
+                  >
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                  4.
+                  คุณมีอาการใดๆที่มีอยู่ซึ่งจะทำให้ระบบภูมิคุ้มกันของคุณอ่อนแอลง
+                  (Do you have any existing condition which weakens your immune
+                  system ?)
+                </div>
+
+                <div class="radio ml-3 mr-3">
+                  <label
+                    ><input type="radio" name="optradio4" /> ใข้ / Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label
+                    ><input type="radio" name="optradio4" /> ไม่ใช่ / No</label
+                  >
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-3"></div>
+                ในช่วง 14 วันที่ผ่านมาคุณเดินทาง หรือ แวะผ่าน ในประเทศใดๆ
+                หรือไม่ ? โปรดระบุ <br />
+                (During last 14 days, have you travelled from or transited in
+                any country )
+                <div class="col-md-3 ml-5">
+                  <div class="radio mr-3">
+                    <label
+                      ><input type="radio" name="optradio5" /> ใข้ / Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label
+                      ><input type="radio" name="optradio5" /> ไม่ใช่ /
+                      No</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3"></div>
+                <label class="checkbox-inline mr-3"
+                  ><input type="checkbox" value="" />China (จีน)</label
+                >
+                <label class="checkbox-inline mr-3"
+                  ><input type="checkbox" value="" />Macao (มาเก๊า)</label
+                >
+                <label class="checkbox-inline mr-3"
+                  ><input type="checkbox" value="" />Hong Kong (ฮ่องกง)</label
+                >
+                <label class="checkbox-inline mr-3"
+                  ><input type="checkbox" value="" />Phuket (ภูเก็ต)</label
+                >
+                <label class="checkbox-inline mr-3"
+                  ><input type="checkbox" value="" />America (อเมริกา)</label
+                >
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-3"></div>
+                ในช่วง 14
+                วันที่ผ่านมาคุณสัมผัสใกล้ชิดกับคนที่มาจากพื้นที่ที่มีรายงานการระบาดต่อเนื่องของโรค
+                COVID-19 <br />
+                หรือ มีประวัติใกล้ชิด หรือ สัมผัสกับผู้ป่วนเข้าข่าย หรือ ยืนยัน
+                โรคติดเชื่อ COVID-19 หรือไม่ <br />
+                (During last 14 days, have you close contact those who came back
+                from the area affected <br />
+                by the outtbreacks of COVID-19 or history of close contact with
+                a confirmed case of COVID-19 infection?)
+                <div class="col-md-3">
+                  <div class="radio mr-3">
+                    <label
+                      ><input type="radio" name="optradio5" /> ใข้ / Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label
+                      ><input type="radio" name="optradio5" /> ไม่ใช่ /
+                      No</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-5"></div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
 
         <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright &copy; Your Website 2019</span>
-            </div>
-          </div>
-        </footer>
+
         <!-- End of Footer -->
       </div>
       <!-- End of Content Wrapper -->

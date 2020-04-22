@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Score</title>
+    <title>Country</title>
 
     <!-- Custom fonts for this template -->
     <link
@@ -62,6 +62,8 @@
             <span>Home</span></a
           >
         </li>
+
+        <!-- Divider -->
         <hr class="sidebar-divider" />
 
         <!-- Heading -->
@@ -95,6 +97,7 @@
             </div>
           </div>
         </li>
+
         <!-- Nav Item - Tables -->
         <li class="nav-item active">
           <a class="nav-link" href="tables.html">
@@ -102,6 +105,7 @@
             <span>Tables</span></a
           >
         </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block" />
 
@@ -372,10 +376,7 @@
                   <span class="mr-2 d-none d-lg-inline text-gray-600 small"
                     >Sorravit Thongsong</span
                   >
-                  <img
-                    class="img-profile rounded-circle"
-                    src="img/me.jpg"
-                  />
+                  <img class="img-profile rounded-circle" src="img/me.jpg" />
                 </a>
                 <!-- Dropdown - User Information -->
                 <div
@@ -410,120 +411,30 @@
               </li>
             </ul>
           </nav>
-          
-
-          <div class="container-fluid">
-            <!-- Page Heading -->
-            <div
-              class="d-sm-flex align-items-center justify-content-between mb-4"
-            >
-              <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-              <a
-                href="#"
-                class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
-                ><i class="fas fa-download fa-sm text-white-50"></i> Generate
-                Report</a
-              >
-            </div>
-
-            <!-- Content Row -->
-
-            <div class="row">
-              <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-bottom-primary shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
-                        >
-                          Confirmed
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="confirmed">
-                           
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <i class=" fa-2x text-gray-300"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <!-- Earnings (Monthly) Card Example -->
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-bottom-danger shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-danger text-uppercase mb-1"
-                        >
-                        deaths
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="deaths">
-                          
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <i class=" fa-2x text-gray-300"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-bottom-success shadow h-100 py-2">
-                  <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                      <div class="col mr-2">
-                        <div
-                          class="text-xs font-weight-bold text-success text-uppercase mb-1"
-                        >
-                        recovered
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="recovered">
-                        
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <i class=" fa-2x text-gray-300"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              
-            </div>
-          </div>
-
-          
-
-
           <!-- End of Topbar -->
+          <!-- DataTales Example -->
           <div class="container">
-            <h1 id="country"></h1>
-            
             <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">Date</th>
-                  <th scope="col">Confirmed</th>
-                  <th scope="col">Death</th>
-                  <th scope="col">Recovery</th>
+                  <th scope="col">#</th>
+                  <th scope="col">Country</th>
                 </tr>
               </thead>
               <tbody id="data"></tbody>
             </table>
-            
           </div>
-          
+        </div>
+        <!-- End of Main Content -->
 
         <!-- Footer -->
-      
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2019</span>
+            </div>
+          </div>
+        </footer>
         <!-- End of Footer -->
       </div>
       <!-- End of Content Wrapper -->
@@ -590,8 +501,6 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/country.js"></script>
+    <script src="js/data.js"></script>
   </body>
 </html>
-
-
