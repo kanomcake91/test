@@ -78,22 +78,22 @@ $(function () {
       totalweek5 = [],
       totalweek6 = [];
     $.getJSON(url, function (result) {
-      var c1 = 0,
-        c2 = 0,
-        c3 = 0,
-        c4 = 0,
-        c5 = 0,
-        c6 = 0;
+      var confirmed1 = 0,
+        confirmed2 = 0,
+        confirmed3 = 0,
+        confirmed4 = 0,
+        confirmed5 = 0,
+        confirmed6 = 0;
       for (var country in result) {
         var selectedCountry = result[country];
         var total = selectedCountry.length;
 
-        c1 = c1 + selectedCountry[total - 1].confirmed;
-        c2 = c2 + selectedCountry[total - 7].confirmed;
-        c3 = c3 + selectedCountry[total - 14].confirmed;
-        c4 = c4 + selectedCountry[total - 21].confirmed;
-        c5 = c5 + selectedCountry[total - 28].confirmed;
-        c6 = c6 + selectedCountry[total - 35].confirmed;
+        confirmed1 = confirmed1 + selectedCountry[total - 1].confirmed;
+        confirmed2 = confirmed2 + selectedCountry[total - 7].confirmed;
+        confirmed3 = confirmed3 + selectedCountry[total - 14].confirmed;
+        confirmed4 = confirmed4 + selectedCountry[total - 21].confirmed;
+        confirmed5 = confirmed5 + selectedCountry[total - 28].confirmed;
+        confirmed6 = confirmed6 + selectedCountry[total - 35].confirmed;
 
         week1 = selectedCountry[total - 1].date;
         week2 = selectedCountry[total - 7].date;
@@ -103,12 +103,12 @@ $(function () {
         week6 = selectedCountry[total - 35].date;
       }
 
-      totalconfirmed1.push(c1),
-        totalconfirmed2.push(c2),
-        totalconfirmed3.push(c3),
-        totalconfirmed4.push(c4),
-        totalconfirmed5.push(c5),
-        totalconfirmed6.push(c6);
+      totalconfirmed1.push(confirmed1),
+        totalconfirmed2.push(confirmed2),
+        totalconfirmed3.push(confirmed3),
+        totalconfirmed4.push(confirmed4),
+        totalconfirmed5.push(confirmed5),
+        totalconfirmed6.push(confirmed6);
 
       totalweek1.push(week1),
         totalweek2.push(week2),
