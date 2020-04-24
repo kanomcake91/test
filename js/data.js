@@ -28,8 +28,7 @@ $(function () {
     $("#confirmed").append(confirmed + " People");
     $("#deaths").append(deaths + " People");
     $("#recovered").append(recovered + " People");
-
-    var ctxB = document.getElementById("barChart").getContext("2d");
+    var ctxB = document.getElementById("barChart");
     var myBarChart = new Chart(ctxB, {
       type: "bar",
       data: {
