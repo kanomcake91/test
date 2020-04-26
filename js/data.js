@@ -64,25 +64,25 @@ $(function () {
       },
     });
 
-    var totalconfirmed1 = [],
-      totalconfirmed2 = [],
-      totalconfirmed3 = [],
-      totalconfirmed4 = [],
-      totalconfirmed5 = [],
-      totalconfirmed6 = [];
-    var totalweek1 = [],
-      totalweek2 = [],
-      totalweek3 = [],
-      totalweek4 = [],
-      totalweek5 = [],
-      totalweek6 = [];
     $.getJSON(url, function (result) {
       var confirmed1 = 0,
         confirmed2 = 0,
         confirmed3 = 0,
         confirmed4 = 0,
         confirmed5 = 0,
-        confirmed6 = 0;
+        confirmed6 = 0,
+        deaths1 = 0,
+        deaths2 = 0,
+        deaths3 = 0,
+        deaths4 = 0,
+        deaths5 = 0,
+        deaths6 = 0,
+        recovered1 = 0,
+        recovered2 = 0,
+        recovered3 = 0,
+        recovered4 = 0,
+        recovered5 = 0,
+        recovered6 = 0;
       for (var country in result) {
         var selectedCountry = result[country];
         var total = selectedCountry.length;
@@ -94,6 +94,20 @@ $(function () {
         confirmed5 = confirmed5 + selectedCountry[total - 28].confirmed;
         confirmed6 = confirmed6 + selectedCountry[total - 35].confirmed;
 
+        deaths1 = deaths1 + selectedCountry[total - 1].deaths;
+        deaths2 = deaths2 + selectedCountry[total - 7].deaths;
+        deaths3 = deaths3 + selectedCountry[total - 14].deaths;
+        deaths4 = deaths4 + selectedCountry[total - 21].deaths;
+        deaths5 = deaths5 + selectedCountry[total - 28].deaths;
+        deaths6 = deaths6 + selectedCountry[total - 35].deaths;
+
+        recovered1 = recovered1 + selectedCountry[total - 1].recovered;
+        recovered2 = recovered2 + selectedCountry[total - 7].recovered;
+        recovered3 = recovered3 + selectedCountry[total - 14].recovered;
+        recovered4 = recovered4 + selectedCountry[total - 21].recovered;
+        recovered5 = recovered5 + selectedCountry[total - 28].recovered;
+        recovered6 = recovered6 + selectedCountry[total - 35].recovered;
+
         week1 = selectedCountry[total - 1].date;
         week2 = selectedCountry[total - 7].date;
         week3 = selectedCountry[total - 14].date;
@@ -102,53 +116,69 @@ $(function () {
         week6 = selectedCountry[total - 35].date;
       }
 
-      totalconfirmed1.push(confirmed1),
-        totalconfirmed2.push(confirmed2),
-        totalconfirmed3.push(confirmed3),
-        totalconfirmed4.push(confirmed4),
-        totalconfirmed5.push(confirmed5),
-        totalconfirmed6.push(confirmed6);
-
-      totalweek1.push(week1),
-        totalweek2.push(week2),
-        totalweek3.push(week3),
-        totalweek4.push(week4),
-        totalweek5.push(week5),
-        totalweek6.push(week6);
-
       var ctx = document.getElementById("myAreaChart");
       var myLineChart = new Chart(ctx, {
         type: "line",
         data: {
-          labels: [
-            totalweek6,
-            totalweek5,
-            totalweek4,
-            totalweek3,
-            totalweek2,
-            totalweek1,
-          ],
+          labels: [week6, week5, week4, week3, week2, week1],
           datasets: [
             {
               label: "Confirmed : ",
               lineTension: 0.3,
-              backgroundColor: "rgba(255, 99, 132, 0.2)",
-              borderColor: "rgba(255,99,132,1)",
+              backgroundColor: "rgba(54, 162, 235, 0.05)",
+              borderColor: "rgba(54, 162, 235, 1)",
               pointRadius: 3,
-              pointBackgroundColor: "rgba(78, 115, 223, 1)",
-              pointBorderColor: "rgba(78, 115, 223, 1)",
+              pointBackgroundColor: "rgba(54, 162, 235, 1)",
+              pointBorderColor: "rgba(54, 162, 235, 1)",
               pointHoverRadius: 3,
               pointHoverBackgroundColor: "rgba(255, 206, 86, 1)",
               pointHoverBorderColor: "rgba(255, 206, 86, 1)",
               pointHitRadius: 10,
               pointBorderWidth: 2,
               data: [
-                totalconfirmed6,
-                totalconfirmed5,
-                totalconfirmed4,
-                totalconfirmed3,
-                totalconfirmed2,
-                totalconfirmed1,
+                confirmed6,
+                confirmed5,
+                confirmed4,
+                confirmed3,
+                confirmed2,
+                confirmed1,
+              ],
+            },
+            {
+              label: "Deaths : ",
+              lineTension: 0.3,
+              backgroundColor: "rgba(255, 99, 132, 0.3)",
+              borderColor: "rgba(255, 99, 132, 1)",
+              pointRadius: 3,
+              pointBackgroundColor: "rgba(255, 99, 132, 1)",
+              pointBorderColor: "rgba(255, 99, 132, 1)",
+              pointHoverRadius: 3,
+              pointHoverBackgroundColor: "rgba(255, 206, 86, 1)",
+              pointHoverBorderColor: "rgba(255, 206, 86, 1)",
+              pointHitRadius: 10,
+              pointBorderWidth: 2,
+              data: [deaths6, deaths5, deaths4, deaths3, deaths2, deaths1],
+            },
+            {
+              label: "Recovered : ",
+              lineTension: 0.3,
+              backgroundColor: "rgba(255, 206, 86, 0.2)",
+              borderColor: "rgba(255, 206, 86, 1)",
+              pointRadius: 3,
+              pointBackgroundColor: "rgba(255, 206, 86, 1)",
+              pointBorderColor: "rgba(255, 206, 86, 1)",
+              pointHoverRadius: 3,
+              pointHoverBackgroundColor: "rgba(255, 206, 86, 1)",
+              pointHoverBorderColor: "rgba(255, 206, 86, 0.2)",
+              pointHitRadius: 10,
+              pointBorderWidth: 2,
+              data: [
+                recovered6,
+                recovered5,
+                recovered4,
+                recovered3,
+                recovered2,
+                recovered1,
               ],
             },
           ],
