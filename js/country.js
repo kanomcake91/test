@@ -8,7 +8,7 @@ $(function () {
   $.getJSON(url, function (result) {
     var selectedCountry = result[country];
     var total = selectedCountry.length;
-    for (var i = 0; i < total; i++) {
+    for (var i = total - 1; i >= 0; i--) {
       var row = `<tr>
         <th scope="row">${selectedCountry[i].date}</th>
         <td>${selectedCountry[i].confirmed}</td>
