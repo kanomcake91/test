@@ -4,14 +4,16 @@ Welcome to the Finstable Website Frontend repository! This repository contains t
 
 ## Overview
 
-The Finstable Website is a platform designed to provide users with comprehensive financial and investment-related information. It aims to offer a user-friendly interface for accessing and visualizing financial data, empowering users to make informed decisions about their investments.
+The Finstable Website is an online platform dedicated to providing comprehensive information about our company. It serves as a central hub where users can explore details about our products, services, team members, and company culture. Additionally, the website offers channels for contacting us and provides insights into career opportunities within our organization.
 
 ## Features
 
-- **Intuitive Interface**: The website provides a clean and intuitive interface for users to navigate and access financial data easily.
-- **Customizable Dashboard**: Users can customize their dashboard to display the financial data and metrics that matter most to them.
-- **Real-time Data Updates**: The website ensures that users have access to up-to-date and accurate financial data through real-time updates.
-- **Responsive Design**: The frontend is built with responsiveness in mind, ensuring a seamless experience across various devices and screen sizes.
+- **Company Information**: The website showcases detailed information about our company, including our mission, vision, values, and history.
+- **Product and Service Listings**: Users can browse through our products and services, gaining insights into their features and benefits.
+- **Team Directory**: Explore profiles of our team members, learn about their roles and expertise, and connect with them professionally.
+- **Contact Channels**: The website offers various channels for users to reach out to us, including email, phone, and social media platforms.
+- **Career Opportunities**: Discover current job openings within our organization, learn about our hiring process, and explore opportunities for professional growth and development.
+
 
 ## Getting Started
 
