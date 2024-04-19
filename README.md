@@ -60,3 +60,6 @@ We welcome contributions from the community! If you'd like to contribute to the 
 3. Make your changes and commit them with descriptive messages.
 4. Push your changes to your fork.
 5. Submit a pull request to the main branch of the original repository.
+
+## Support
+   If you encounter any issues or have any questions about the Finstable Website frontend, please feel free to reach out to us at support@finstable.com.
